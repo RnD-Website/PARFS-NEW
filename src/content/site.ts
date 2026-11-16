@@ -12,7 +12,7 @@ export const site = {
   tagline: "Maison de Parfum — scent for every soul.",
   description:
     "PARFS — Maison de Parfum. Eaux de parfum and extraits in weighted glass and solid brass.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000"),
   locale: "en_BD",
   currency: "BDT",
   country: "BD",

@@ -4,7 +4,7 @@ import { legalPages } from "@/content/parfs-legal";
 
 /** PARFS pages only. */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000");
   const u = (p: string) => new URL(p, base).toString();
   return [
     { url: u("/"), changeFrequency: "weekly", priority: 1 },

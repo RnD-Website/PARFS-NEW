@@ -5,7 +5,7 @@ import "./globals.css";
 import { Providers } from "@/components/layout/providers";
 import { Toaster } from "@/components/ui/toaster";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000");
 const DESCRIPTION = "PARFS — Maison de Parfum. Scent for every soul: eaux de parfum and extraits in weighted glass and solid brass.";
 
 const inter = Inter({ subsets: ["latin"], weight: ["500", "600", "700"], variable: "--font-inter", display: "swap" });
