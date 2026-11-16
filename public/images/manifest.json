@@ -1,0 +1,470 @@
+[
+  {
+    "file": "/images/hero/hero-sneaker.png",
+    "nodeId": "17:1360",
+    "figmaWidth": 659,
+    "figmaHeight": 715,
+    "pixelWidth": 686,
+    "pixelHeight": 744,
+    "description": "Hero sneaker cutout (transparent background)"
+  },
+  {
+    "file": "/images/hero/floating-card-headphones.png",
+    "nodeId": "8:71",
+    "figmaWidth": 92,
+    "figmaHeight": 92,
+    "pixelWidth": 184,
+    "pixelHeight": 184,
+    "description": "Hero floating product card photo - headphones"
+  },
+  {
+    "file": "/images/marketing/about-lifestyle.png",
+    "nodeId": "8:118",
+    "figmaWidth": 620,
+    "figmaHeight": 465,
+    "pixelWidth": 744,
+    "pixelHeight": 558,
+    "description": "About section lifestyle photo - woman with shopping bags"
+  },
+  {
+    "file": "/images/marketing/sale-campaign.png",
+    "nodeId": "9:586",
+    "figmaWidth": 674,
+    "figmaHeight": 340,
+    "pixelWidth": 1011,
+    "pixelHeight": 510,
+    "description": "Sale promo campaign photo - man on cube, orange light"
+  },
+  {
+    "file": "/images/marketing/sale-earbuds.png",
+    "nodeId": "9:600",
+    "figmaWidth": 329,
+    "figmaHeight": 300,
+    "pixelWidth": 658,
+    "pixelHeight": 600,
+    "description": "Sale promo picture - earbuds"
+  },
+  {
+    "file": "/images/marketing/sale-egg-chair.png",
+    "nodeId": "9:606",
+    "figmaWidth": 329,
+    "figmaHeight": 300,
+    "pixelWidth": 658,
+    "pixelHeight": 600,
+    "description": "Sale promo picture - white egg chair on orange"
+  },
+  {
+    "file": "/images/categories/electronics.png",
+    "nodeId": "I8:143;6:56",
+    "figmaWidth": 227,
+    "figmaHeight": 266,
+    "pixelWidth": 454,
+    "pixelHeight": 532,
+    "description": "Category tile photo - electronics"
+  },
+  {
+    "file": "/images/categories/fashion.png",
+    "nodeId": "I8:160;6:56",
+    "figmaWidth": 227,
+    "figmaHeight": 266,
+    "pixelWidth": 454,
+    "pixelHeight": 532,
+    "description": "Category tile photo - fashion"
+  },
+  {
+    "file": "/images/categories/home-living.png",
+    "nodeId": "I8:171;6:56",
+    "figmaWidth": 227,
+    "figmaHeight": 266,
+    "pixelWidth": 454,
+    "pixelHeight": 532,
+    "description": "Category tile photo - home-living"
+  },
+  {
+    "file": "/images/categories/beauty.png",
+    "nodeId": "I8:182;6:56",
+    "figmaWidth": 227,
+    "figmaHeight": 266,
+    "pixelWidth": 454,
+    "pixelHeight": 532,
+    "description": "Category tile photo - beauty"
+  },
+  {
+    "file": "/images/categories/footwear.png",
+    "nodeId": "I8:193;6:56",
+    "figmaWidth": 227,
+    "figmaHeight": 266,
+    "pixelWidth": 454,
+    "pixelHeight": 532,
+    "description": "Category tile photo - footwear"
+  },
+  {
+    "file": "/images/categories/audio.png",
+    "nodeId": "I8:204;6:56",
+    "figmaWidth": 227,
+    "figmaHeight": 266,
+    "pixelWidth": 454,
+    "pixelHeight": 532,
+    "description": "Category tile photo - audio"
+  },
+  {
+    "file": "/images/products/aero-runner-x.png",
+    "nodeId": "I9:342;6:29",
+    "figmaWidth": 345,
+    "figmaHeight": 290,
+    "pixelWidth": 690,
+    "pixelHeight": 580,
+    "description": "Product card photo - Aero Runner X Sneaker"
+  },
+  {
+    "file": "/images/products/studio-max-headphones.png",
+    "nodeId": "I9:380;6:29",
+    "figmaWidth": 345,
+    "figmaHeight": 290,
+    "pixelWidth": 690,
+    "pixelHeight": 580,
+    "description": "Product card photo - Studio Max Headphones"
+  },
+  {
+    "file": "/images/products/pulse-buds-pro.png",
+    "nodeId": "I9:413;6:29",
+    "figmaWidth": 345,
+    "figmaHeight": 290,
+    "pixelWidth": 690,
+    "pixelHeight": 580,
+    "description": "Product card photo - Pulse Buds Pro"
+  },
+  {
+    "file": "/images/products/orbit-watch-s2.png",
+    "nodeId": "I9:440;6:29",
+    "figmaWidth": 345,
+    "figmaHeight": 290,
+    "pixelWidth": 690,
+    "pixelHeight": 580,
+    "description": "Product card photo - Orbit Watch S2"
+  },
+  {
+    "file": "/images/products/cocoa-lounge-chair.png",
+    "nodeId": "I9:467;6:29",
+    "figmaWidth": 345,
+    "figmaHeight": 290,
+    "pixelWidth": 690,
+    "pixelHeight": 580,
+    "description": "Product card photo - Cocoa Lounge Chair"
+  },
+  {
+    "file": "/images/products/glow-ritual-serum-set.png",
+    "nodeId": "I9:495;6:29",
+    "figmaWidth": 345,
+    "figmaHeight": 290,
+    "pixelWidth": 690,
+    "pixelHeight": 580,
+    "description": "Product card photo - Glow Ritual Serum Set"
+  },
+  {
+    "file": "/images/products/halo-bluetooth-speaker.png",
+    "nodeId": "I9:522;6:29",
+    "figmaWidth": 345,
+    "figmaHeight": 290,
+    "pixelWidth": 690,
+    "pixelHeight": 580,
+    "description": "Product card photo - Halo Bluetooth Speaker"
+  },
+  {
+    "file": "/images/products/ember-oversized-jacket.png",
+    "nodeId": "I9:549;6:29",
+    "figmaWidth": 345,
+    "figmaHeight": 290,
+    "pixelWidth": 690,
+    "pixelHeight": 580,
+    "description": "Product card photo - Ember Oversized Jacket"
+  },
+  {
+    "file": "/images/products/ai-aero-runner-x.png",
+    "nodeId": "I9:209;7:77",
+    "figmaWidth": 72,
+    "figmaHeight": 72,
+    "pixelWidth": 144,
+    "pixelHeight": 144,
+    "description": "AI suggestion card thumbnail - Aero Runner X"
+  },
+  {
+    "file": "/images/products/ai-cloud-stride-2.png",
+    "nodeId": "I9:230;7:77",
+    "figmaWidth": 72,
+    "figmaHeight": 72,
+    "pixelWidth": 144,
+    "pixelHeight": 144,
+    "description": "AI suggestion card thumbnail - Cloud Stride 2"
+  },
+  {
+    "file": "/images/products/ai-pace-lite.png",
+    "nodeId": "I9:244;7:77",
+    "figmaWidth": 72,
+    "figmaHeight": 72,
+    "pixelWidth": 144,
+    "pixelHeight": 144,
+    "description": "AI suggestion card thumbnail - Pace Lite"
+  },
+  {
+    "file": "/images/products/aero-runner-x-main.png",
+    "nodeId": "11:518",
+    "figmaWidth": 692,
+    "figmaHeight": 520,
+    "pixelWidth": 831,
+    "pixelHeight": 624,
+    "description": "Featured product gallery main - Aero Runner X"
+  },
+  {
+    "file": "/images/products/aero-runner-x-side.png",
+    "nodeId": "11:525",
+    "figmaWidth": 220,
+    "figmaHeight": 190,
+    "pixelWidth": 440,
+    "pixelHeight": 380,
+    "description": "Featured product gallery - side view"
+  },
+  {
+    "file": "/images/products/aero-runner-x-on-foot.png",
+    "nodeId": "11:531",
+    "figmaWidth": 220,
+    "figmaHeight": 190,
+    "pixelWidth": 440,
+    "pixelHeight": 380,
+    "description": "Featured product gallery - on foot"
+  },
+  {
+    "file": "/images/products/aero-runner-x-detail.png",
+    "nodeId": "11:537",
+    "figmaWidth": 220,
+    "figmaHeight": 190,
+    "pixelWidth": 440,
+    "pixelHeight": 380,
+    "description": "Featured product gallery - knit detail"
+  },
+  {
+    "file": "/images/reviews/customer-headphones.png",
+    "nodeId": "I21:1024;21:991",
+    "figmaWidth": 294,
+    "figmaHeight": 458,
+    "pixelWidth": 368,
+    "pixelHeight": 573,
+    "description": "Customer photo card image (image fill only, no sound toggle) - unboxing headphones"
+  },
+  {
+    "file": "/images/reviews/customer-sneaker.png",
+    "nodeId": "I21:1095;21:991",
+    "figmaWidth": 294,
+    "figmaHeight": 458,
+    "pixelWidth": 441,
+    "pixelHeight": 687,
+    "description": "Customer photo card image (image fill only, no sound toggle) - lacing sneakers on stairs"
+  },
+  {
+    "file": "/images/reviews/customer-serum.png",
+    "nodeId": "I21:1228;21:991",
+    "figmaWidth": 294,
+    "figmaHeight": 458,
+    "pixelWidth": 353,
+    "pixelHeight": 550,
+    "description": "Customer photo card image (image fill only, no sound toggle) - serum bottles on bathroom shelf"
+  },
+  {
+    "file": "/images/reviews/customer-chair.png",
+    "nodeId": "I21:1299;21:991",
+    "figmaWidth": 294,
+    "figmaHeight": 458,
+    "pixelWidth": 441,
+    "pixelHeight": 687,
+    "description": "Customer photo card image (image fill only, no sound toggle) - cat on boucle armchair"
+  },
+  {
+    "file": "/images/reviews/thumb-alyssa-h-headphones.png",
+    "nodeId": "I21:1033;21:958",
+    "figmaWidth": 84,
+    "figmaHeight": 64,
+    "pixelWidth": 168,
+    "pixelHeight": 128,
+    "description": "Review receipt card product thumbnail - Alyssa H. - headphones"
+  },
+  {
+    "file": "/images/reviews/thumb-rafi-k-sneaker.png",
+    "nodeId": "I21:1104;21:958",
+    "figmaWidth": 84,
+    "figmaHeight": 64,
+    "pixelWidth": 168,
+    "pixelHeight": 128,
+    "description": "Review receipt card product thumbnail - Rafi K. - sneaker"
+  },
+  {
+    "file": "/images/reviews/thumb-priya-s-serum.png",
+    "nodeId": "I21:1166;21:958",
+    "figmaWidth": 84,
+    "figmaHeight": 64,
+    "pixelWidth": 168,
+    "pixelHeight": 128,
+    "description": "Review receipt card product thumbnail - Priya S. - serum set"
+  },
+  {
+    "file": "/images/reviews/thumb-maya-t-chair.png",
+    "nodeId": "I21:1237;21:958",
+    "figmaWidth": 84,
+    "figmaHeight": 64,
+    "pixelWidth": 168,
+    "pixelHeight": 128,
+    "description": "Review receipt card product thumbnail - Maya T. - lounge chair"
+  },
+  {
+    "file": "/images/payments/amex.png",
+    "nodeId": "17:1366",
+    "figmaWidth": 38,
+    "figmaHeight": 24,
+    "pixelWidth": 152,
+    "pixelHeight": 96,
+    "description": "Footer payment logo - American Express"
+  },
+  {
+    "file": "/images/payments/apple-pay.png",
+    "nodeId": "17:1375",
+    "figmaWidth": 38,
+    "figmaHeight": 24,
+    "pixelWidth": 152,
+    "pixelHeight": 96,
+    "description": "Footer payment logo - Apple Pay"
+  },
+  {
+    "file": "/images/payments/bancontact.png",
+    "nodeId": "17:1386",
+    "figmaWidth": 38,
+    "figmaHeight": 24,
+    "pixelWidth": 152,
+    "pixelHeight": 96,
+    "description": "Footer payment logo - Bancontact"
+  },
+  {
+    "file": "/images/payments/google-pay.png",
+    "nodeId": "17:1393",
+    "figmaWidth": 38,
+    "figmaHeight": 24,
+    "pixelWidth": 152,
+    "pixelHeight": 96,
+    "description": "Footer payment logo - Google Pay"
+  },
+  {
+    "file": "/images/payments/ideal-wero.png",
+    "nodeId": "17:1401",
+    "figmaWidth": 38,
+    "figmaHeight": 24,
+    "pixelWidth": 152,
+    "pixelHeight": 96,
+    "description": "Footer payment logo - iDEAL | Wero"
+  },
+  {
+    "file": "/images/payments/visa.png",
+    "nodeId": "17:1416",
+    "figmaWidth": 38,
+    "figmaHeight": 24,
+    "pixelWidth": 152,
+    "pixelHeight": 96,
+    "description": "Footer payment logo - Visa"
+  },
+  {
+    "file": "/images/payments/klarna.png",
+    "nodeId": "17:1421",
+    "figmaWidth": 38,
+    "figmaHeight": 24,
+    "pixelWidth": 152,
+    "pixelHeight": 96,
+    "description": "Footer payment logo - Klarna"
+  },
+  {
+    "file": "/images/payments/maestro.png",
+    "nodeId": "17:1425",
+    "figmaWidth": 38,
+    "figmaHeight": 24,
+    "pixelWidth": 152,
+    "pixelHeight": 96,
+    "description": "Footer payment logo - Maestro"
+  },
+  {
+    "file": "/images/payments/mastercard.png",
+    "nodeId": "17:1431",
+    "figmaWidth": 38,
+    "figmaHeight": 24,
+    "pixelWidth": 152,
+    "pixelHeight": 96,
+    "description": "Footer payment logo - Mastercard"
+  },
+  {
+    "file": "/images/payments/paypal.png",
+    "nodeId": "17:1437",
+    "figmaWidth": 38,
+    "figmaHeight": 24,
+    "pixelWidth": 152,
+    "pixelHeight": 96,
+    "description": "Footer payment logo - PayPal"
+  },
+  {
+    "file": "/images/payments/shop-pay.png",
+    "nodeId": "17:1443",
+    "figmaWidth": 38,
+    "figmaHeight": 24,
+    "pixelWidth": 152,
+    "pixelHeight": 96,
+    "description": "Footer payment logo - Shop Pay"
+  },
+  {
+    "file": "/images/payments/unionpay.png",
+    "nodeId": "17:1447",
+    "figmaWidth": 38,
+    "figmaHeight": 24,
+    "pixelWidth": 152,
+    "pixelHeight": 96,
+    "description": "Footer payment logo - UnionPay"
+  },
+  {
+    "file": "/images/services/gift-vouchers.png",
+    "nodeId": "I16:1133;16:375",
+    "figmaWidth": 128,
+    "figmaHeight": 128,
+    "pixelWidth": 256,
+    "pixelHeight": 256,
+    "description": "Service card icon disc - BRAND gift vouchers (orange disc, coupon icon)"
+  },
+  {
+    "file": "/images/services/gift-card.png",
+    "nodeId": "I16:1145;16:375",
+    "figmaWidth": 128,
+    "figmaHeight": 128,
+    "pixelWidth": 256,
+    "pixelHeight": 256,
+    "description": "Service card icon disc - Send a gift card (black disc, gift icon)"
+  },
+  {
+    "file": "/images/services/click-collect.png",
+    "nodeId": "I16:1156;16:375",
+    "figmaWidth": 128,
+    "figmaHeight": 128,
+    "pixelWidth": 256,
+    "pixelHeight": 256,
+    "description": "Service card icon disc - Order online, collect in store (purple disc, store icon)"
+  },
+  {
+    "file": "/images/services/instalments.png",
+    "nodeId": "I16:1168;16:375",
+    "figmaWidth": 128,
+    "figmaHeight": 128,
+    "pixelWidth": 256,
+    "pixelHeight": 256,
+    "description": "Service card icon disc - Pay in easy instalments (orange disc, wallet icon)"
+  },
+  {
+    "file": "/images/services/express-delivery.png",
+    "nodeId": "I16:1179;16:375",
+    "figmaWidth": 128,
+    "figmaHeight": 128,
+    "pixelWidth": 256,
+    "pixelHeight": 256,
+    "description": "Service card icon disc - Express home delivery (black disc, truck icon)"
+  }
+]

@@ -1,0 +1,9 @@
+import { getCurrentUser } from "@/lib/auth/session";
+
+export async function GET() {
+  const user = await getCurrentUser();
+  return Response.json(
+    { user: user ? { id: user.id, name: user.name, email: user.email, phone: user.phone } : null },
+    { headers: { "cache-control": "no-store" } },
+  );
+}

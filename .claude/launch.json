@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 3000
+    },
+    {
+      "name": "faunora",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "/Users/tusar/Documents/Site Design/faunora", "run", "dev", "--", "--port", "3100"],
+      "port": 3100
+    },
+    {
+      "name": "nutravio",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "/Users/tusar/Documents/Site Design/nutravio", "run", "dev", "--", "--port", "3200"],
+      "port": 3200
+    }
+  ]
+}

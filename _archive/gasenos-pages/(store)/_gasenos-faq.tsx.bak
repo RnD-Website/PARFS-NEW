@@ -1,0 +1,27 @@
+import type { Metadata } from "next";
+import { FAQSection } from "@/components/sections/home/faq";
+import { Breadcrumbs } from "@/components/catalog/breadcrumbs";
+import { JsonLd, faqJsonLd } from "@/lib/seo/json-ld";
+import { ButtonLink } from "@/components/ui/button";
+
+export const metadata: Metadata = { title: "FAQ", description: "Everything about ordering, delivery and returns at GASENOS.", alternates: { canonical: "/faq" } };
+
+export default function FAQPage() {
+  return (
+    <>
+      <JsonLd data={faqJsonLd()} />
+      <div className="container-page pt-6 lg:pt-10">
+        <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "FAQ", href: "/faq" }]} />
+      </div>
+      <FAQSection />
+      <div className="container-page -mt-6 flex justify-center gap-3 pb-16 lg:-mt-16 lg:pb-24">
+        <ButtonLink href="/contact" variant="outline">
+          Contact us
+        </ButtonLink>
+        <ButtonLink href="/assistant" variant="ai">
+          Ask GASENOS AI
+        </ButtonLink>
+      </div>
+    </>
+  );
+}

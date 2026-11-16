@@ -1,0 +1,125 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { commerce } from "@/lib/commerce";
+import { ProductGallery } from "@/components/commerce/product-gallery";
+import { ProductPurchase } from "@/components/commerce/product-purchase";
+import { ProductCard } from "@/components/commerce/product-card";
+import { Breadcrumbs } from "@/components/catalog/breadcrumbs";
+import { Accordion } from "@/components/ui/accordion";
+import { JsonLd, productJsonLd } from "@/lib/seo/json-ld";
+import { storePolicy } from "@/content/site";
+import { formatMoney } from "@/lib/utils/money";
+import { AskAboutProduct } from "@/components/commerce/ask-about-product";
+import { RecentlyViewedTracker } from "@/components/commerce/recently-viewed";
+
+type Props = { params: Promise<{ slug: string }> };
+
+export const revalidate = 300;
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const p = await commerce.getProduct((await params).slug);
+  if (!p) return { title: "Product not found" };
+  const desc = p.description ?? `${p.name} — ${formatMoney(p.price, p.currency)} at GASENOS.${p.highlights.length ? ` ${p.highlights.join(". ")}.` : ""}`;
+  return {
+    title: p.name,
+    description: desc,
+    alternates: { canonical: `/products/${p.slug}` },
+    openGraph: { title: p.name, description: desc, images: p.images.slice(0, 1).map((i) => ({ url: i.src, width: i.width, height: i.height, alt: i.alt })) },
+  };
+}
+
+export default async function ProductPage({ params }: Props) {
+  const product = await commerce.getProduct((await params).slug);
+  if (!product) notFound();
+  const related = await commerce.getRelatedProducts(product, 4);
+  const cat = product.categories[0];
+  const attributes = Object.entries(product.attributes);
+  const isFootwear = product.categories.some((c) => c.slug === "footwear");
+
+  const details = [
+    {
+      id: "details",
+      question: "Product details",
+      answer: product.description ? (
+        <p className="whitespace-pre-line">{product.description}</p>
+      ) : (
+        <div className="flex flex-col gap-2">
+          {product.highlights.length > 0 && <p>{product.highlights.join(" · ")}</p>}
+          {attributes.length > 0 && (
+            <dl className="grid grid-cols-[auto_1fr] gap-x-6 gap-y-1">
+              {attributes.map(([k, v]) => (
+                <div key={k} className="contents">
+                  <dt className="text-ink-muted">{k}</dt>
+                  <dd>{v}</dd>
+                </div>
+              ))}
+            </dl>
+          )}
+          <p className="text-ink-muted">Full product description coming soon. Questions? Ask GASENOS AI or contact us.</p>
+        </div>
+      ),
+    },
+    {
+      id: "delivery",
+      question: "Delivery & returns",
+      answer: `Most orders arrive in ${storePolicy.deliveryEstimate}. Free delivery on orders over ${formatMoney(storePolicy.freeShippingThreshold)}. ${storePolicy.returnDays}-day free returns.`,
+    },
+    { id: "warranty", question: "Warranty", answer: `${storePolicy.warrantyYears}-year warranty.` },
+  ];
+
+  return (
+    <>
+      <JsonLd data={productJsonLd(product)} />
+      <RecentlyViewedTracker productId={product.id} />
+      <div className="container-page pt-6 pb-16 lg:pt-10 lg:pb-24">
+        <Breadcrumbs
+          items={[
+            { name: "Home", href: "/" },
+            { name: "Shop", href: "/shop" },
+            ...(cat ? [{ name: cat.name, href: `/shop/${cat.slug}` }] : []),
+            { name: product.name, href: `/products/${product.slug}` },
+          ]}
+        />
+        <div className="mt-6 grid gap-8 md:grid-cols-2 lg:mt-8 lg:gap-14">
+          <div className="md:sticky md:top-[calc(var(--header-h)+24px)] md:self-start">
+            <ProductGallery images={product.images.filter((_, i) => i < 4)} name={product.name} />
+          </div>
+          <div className="flex flex-col gap-8">
+            <ProductPurchase
+              product={product}
+              eyebrow={cat?.name}
+              showQuantity
+              fitCheck={
+                isFootwear
+                  ? {
+                      title: "Not sure about your size?",
+                      text: "Tell GASENOS AI your usual size and how you'll wear them — it'll recommend the right fit.",
+                      cta: "Ask GASENOS AI about sizing",
+                      prompt: `What size should I get in the ${product.name}? I'm usually EU 42.`,
+                    }
+                  : undefined
+              }
+            />
+            <AskAboutProduct name={product.name} />
+            <Accordion items={details} defaultOpen="details" />
+          </div>
+        </div>
+
+        {related.length > 0 && (
+          <section aria-labelledby="related-title" className="mt-16 lg:mt-24">
+            <h2 id="related-title" className="text-h2">
+              You might also like
+            </h2>
+            <ul className="mt-8 grid grid-cols-2 gap-x-3 gap-y-8 sm:gap-x-5 lg:grid-cols-4">
+              {related.map((p) => (
+                <li key={p.id}>
+                  <ProductCard product={p} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+      </div>
+    </>
+  );
+}
