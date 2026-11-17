@@ -43,7 +43,9 @@ export function ParfsHeader() {
   const isHome = pathname === "/";
   // The search panel is light paper, so the bar switches to dark type while it is open.
   const light = searchOpen || !isHome;
-  const ink = light ? "text-p-text" : "text-white";
+  // The colour is applied after hydration: the server-built HTML can carry the wrong page's colour
+  // (seen on Vercel for the cached home page), and React keeps server classes it did not render itself.
+  const ink = !hydrated ? "text-inherit" : light ? "text-p-text" : "text-white";
 
   // Hide while scrolling down, reveal on scroll up; gain a backdrop once past the hero.
   useEffect(() => {
