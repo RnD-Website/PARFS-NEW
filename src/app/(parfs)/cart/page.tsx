@@ -1,8 +1,9 @@
-import { BlankPage, blankMetadata } from "@/components/parfs/blank/blank-page";
+import type { Metadata } from "next";
+import { BagPageView } from "@/components/parfs/bag/bag-page-view";
 
-export const metadata = blankMetadata("Bag");
+export const metadata: Metadata = { title: { absolute: "Bag — PARFS" }, robots: { index: false } };
 
-/** Bag page (linked from the bag drawer's View bag) — not designed yet; intentionally blank (the old store page was archived in _archive/). */
+/** PARFS bag page — the full-page bag, linked from the bag drawer's "View bag". */
 export default function Page() {
-  return <BlankPage title="Bag" />;
+  return <BagPageView />;
 }
